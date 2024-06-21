@@ -1,0 +1,510 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Pake.In | Solusi Untuk Masalah Fashionmu</title>
+  <link rel="shortcut icon" href="../public/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+  .navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* For browsers that support backdrop-filter */
+    background-color: rgba(255, 255, 255, 0.8); /* Fallback for other browsers */
+  }
+
+  footer{
+    margin-bottom: -200px;
+  }
+
+@import 'animate.css';
+</style>
+</head>
+<body>
+    <!--Navbar-->
+    <header class="w-full py-1 navbar-fixed backdrop-blur-md animate__animated animate__fadeInDown">
+      <div class="container mx-auto px-4 md:px-8">
+          <div class="flex flex-wrap justify-between items-center">
+              <!-- bagian kiri -->
+              <div class="flex-shrink-0">
+                  <a href="index.html">
+                      <img src="../public/img/pakein.png" alt="" class="w-32 md:w-40">
+                  </a>
+              </div>
+              <!-- bagian kiri end -->
+  
+              <!-- bagian tengah -->
+              <div class="hidden md:flex md:items-center md:space-x-8 text-lg font-medium text-slate-800">
+                  <ul class="flex space-x-4 md:space-x-8">
+                      <li>
+                          <a href="" class="hover:text-indigo-400 text-indigo-400">Beranda</a>
+                      </li>
+                      <li>
+                          <a href="#about" class="hover:text-indigo-400 transition-all duration-500">Tentang Kami</a>
+                      </li>
+                      <li>
+                          <a href="#layanan" class="hover:text-indigo-400 transition-all duration-500">Layanan</a>
+                      </li>
+                      <li>
+                          <a href="#profile" class="hover:text-indigo-400 transition-all duration-500">Profil</a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- bagian tengah end -->
+  
+              <!-- bagian kanan -->
+              <div class="hidden md:flex mx-11">
+                  <a href="#kontak" class="bg-indigo-400 py-3 px-6 rounded-full font-semibold text-white border border-indigo-400 hover:bg-transparent hover:text-indigo-400 transition-all duration-500">Contact</a>
+              </div>
+              <!-- bagian kanan end -->
+  
+              <!-- mobile menu button -->
+              <div class="md:hidden flex items-center">
+                  <button id="menu-btn" class="focus:outline-none">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                      </svg>
+                  </button>
+              </div>
+          </div>
+  
+          <!-- mobile menu -->
+          <div id="menu" class="hidden md:hidden">
+              <ul class="flex flex-col mt-4 space-y-4 text-lg font-medium text-slate-800">
+                  <li>
+                      <a href="" class="hover:text-indigo-400 text-indigo-400">Beranda</a>
+                  </li>
+                  <li>
+                      <a href="#about" class="hover:text-indigo-400 transition-all duration-500">Tentang Kami</a>
+                  </li>
+                  <li>
+                      <a href="#layanan" class="hover:text-indigo-400 transition-all duration-500">Layanan</a>
+                  </li>
+                  <li>
+                      <a href="#profile" class="hover:text-indigo-400 transition-all duration-500">Profil</a>
+                  </li>
+                  <li>
+                      <a href="#kontak" class="bg-indigo-400 py-3 px-6 rounded-full font-semibold text-white border border-indigo-400 hover:bg-transparent hover:text-indigo-400 transition-all duration-500">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </header>
+  
+  <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const menu = document.getElementById('menu');
+  
+      menuBtn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+      });
+  </script>  
+    <!--Navbar End-->
+<!-- bagian hero -->
+<div class="w-full bg-white py-24 pt-36">
+  <div class="container mx-auto px-4 md:px-8">
+      <div class="flex flex-wrap items-center justify-between w-full mx-auto">
+          <!-- bagian kiri -->
+          <div class="w-full lg:w-1/2 mb-12 lg:mb-0 aos-init" data-aos="fade-up"
+          data-aos-duration="3000">
+              <div class="mb-10">
+                  <h1 class="font-extrabold text-4xl md:text-6xl text-slate-800">
+                      <span class="text-indigo-400">Pake</span><span class="text-lime-300">.In</span> <span class="font-bold">by</span>
+                  </h1>
+                  <h1 class="mt-2 text-blue-500 font-extrabold text-4xl md:text-6xl">FIZA GROUP</h1>
+              </div>
+              <div class="mb-10">
+                  <p class="text-slate-500 font-normal leading-relaxed capitalize">Menjadi platform fashion e-commerce terdepan yang sustainable, berteknologi canggih dengan fleksibilitas tinggi, serta mendukung perekonomian bangsa melalui pemberdayaan UMKM dan brand-brand lokal.</p>
+              </div>
+              <div class="mt-7 flex flex-col sm:flex-row gap-2 mb-8">
+                  <a href="#" class="border border-indigo-400 py-4 px-10 bg-indigo-400 text-white font-semibold rounded-full flex gap-2 items-center justify-between hover:bg-transparent hover:text-indigo-400 transition-all duration-500">
+                      <span>Get Started</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3H8.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                  </a>
+                  <a href="#" class="py-4 px-10 bg-white border border-indigo-400 text-indigo-400 font-semibold rounded-full flex gap-2 items-center justify-between hover:bg-indigo-400 hover:text-white transition-all duration-500">
+                      <span>Video</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5l4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
+                      </svg>
+                  </a>
+              </div>
+              <div class="flex gap-2 items-center">
+                  <p class="font-semibold text-slate-500 capitalize">We are in Social Media :</p>
+                  <div class="flex space-x-1">
+                      <a href="https://www.instagram.com/pake.in2024?igsh=MWlva3lkbDN4MHNj">
+                          <svg class="w-5 h-5 fill-slate-500 hover:fill-indigo-400 hover:-translate-y-2 transition-transform duration-300" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <title>Instagram</title>
+                              <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/>
+                          </svg>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <!-- bagian kiri end -->
+          <!-- bagian kanan -->
+          <div class="w-full lg:w-1/2 relative aos-init" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
+              <div class="flex flex-wrap justify-center lg:justify-end gap-4">
+                  <div class="w-2/3 sm:w-1/2 lg:w-72 rounded-xl overflow-hidden">
+                      <img src="../public/img/mockup.png" alt="Mockup Image 1">
+                  </div>
+                  <div class="w-2/3 sm:w-1/2 lg:w-72 rounded-xl overflow-hidden">
+                      <img src="../public/img/mockup2.png" alt="Mockup Image 2">
+                  </div>
+              </div>
+          </div>
+          <!-- bagian kanan end -->
+      </div>
+  </div>
+</div>
+<!-- bagian hero end -->
+
+    <!--bagian Content-->
+        <div class="w-full bg-white py-24" id="about">
+            <div class="container mx-auto">
+                <div class="max-w-xl mb-16 text-center mx-auto aos-init" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <h1 class="font-bold text-slate-800 text-4xl mb-6">Apa Yang Akan <span class="text-indigo-400">Pake</span><span class="text-lime-300">.In</span> Lakukan?</h1>
+                    <p class="text-slate-500 capitalize">Wujudkan bersama ekonomi digital dengan perkembangan teknologi menuju indonesia emas 2045</p>
+                </div>
+                <!--Content-->
+                <div class="w-full flex space-x-3 aos-init" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <!--Card-->
+                    <div class="w-1/3 bg-white p-4 rounded-md shadow-md flex flex-col justify-center items-center text-center">
+                    <div class="mb-4">
+                        <img src="../public/img/1.png" alt="" class="w-16 hover:scale-110 transition-all duration-500">
+                    </div>
+                    <div class="space-y-3">
+                        <a href="" class="font-semibold text-xl text-slate-800 hover:text-indigo-400">Transformation</a>
+                        <p class="text-slate-500">Mewujudkan pengalaman berbelanja yang revolusioner</p>
+                    </div>
+                    </div>
+                    <!--Card-->
+                    <!--Card-->
+                    <div class="w-1/3 bg-white p-4 rounded-md shadow-md flex flex-col justify-center items-center text-center">
+                    <div class="mb-4">
+                        <img src="../public/img/2.png" alt="" class="w-16 hover:scale-110 transition-all duration-500">
+                    </div>
+                    <div class="space-y-3">
+                        <a href="" class="font-semibold text-xl text-slate-800 hover:text-indigo-400">Enhancement</a>
+                        <p class="text-slate-500">Meningkatkan kepuasan pelanggan melalui peningkatan daya guna aplikasi</p>
+                    </div>
+                    </div>
+                    <!--Card-->
+                    <!--Card-->
+                    <div class="w-1/3 bg-white p-4 rounded-md shadow-md flex flex-col justify-center items-center text-center">
+                    <div class="mb-4">
+                        <img src="../public/img/3.png" alt="" class="w-16 hover:scale-110 transition-all duration-500">
+                    </div>
+                    <div class="space-y-3">
+                        <a href="" class="font-semibold text-xl text-slate-800 hover:text-indigo-400">Innovation</a>
+                        <p class="text-slate-500">Menjadi trendsetter bagi platform fashion e-commerce berbasis digital</p>
+                    </div>
+                    </div>
+                    <!--Card-->
+                </div>
+                <div class="w-full flex mt-6 space-x-3 aos-init" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <!--Card-->
+                    <div class="w-1/3 bg-white p-4 rounded-md shadow-md flex flex-col justify-center items-center text-center">
+                    <div class="mb-4">
+                        <img src="../public/img/4.png" alt="" class="w-16 hover:scale-110 transition-all duration-500">
+                    </div>
+                    <div class="space-y-3">
+                        <a href="" class="font-semibold text-xl text-slate-800 hover:text-indigo-400">Empowerment</a>
+                        <p class="text-slate-500">Mendukung kreativitas anak bangsa melalui pengembangan teknologi</p>
+                    </div>
+                    </div>
+                    <!--Card-->
+                    <!--Card-->
+                    <div class="w-1/3 bg-white p-4 rounded-md shadow-md flex flex-col justify-center items-center text-center">
+                    <div class="mb-4">
+                        <img src="../public/img/5.png" alt="" class="w-16 hover:scale-110 transition-all duration-500">
+                    </div>
+                    <div class="space-y-3">
+                        <a href="" class="font-semibold text-xl text-slate-800 hover:text-indigo-400">Prosperity</a>
+                        <p class="text-slate-500">Meningkatkan perekonomian lokal melalui pemberdayaan UMKM dan Brand Lokal</p>
+                    </div>
+                    </div>
+                    <!--Card-->
+                    <!--Card-->
+                    <div class="w-1/3 bg-white p-4 rounded-md shadow-md flex flex-col justify-center items-center text-center">
+                    <div class="mb-4">
+                        <img src="../public/img/6.png" alt="" class="w-16 hover:scale-110 transition-all duration-500">
+                    </div>
+                    <div class="space-y-3">
+                        <a href="" class="font-semibold text-xl text-slate-800 hover:text-indigo-400">Catalyst</a>
+                        <p class="text-slate-500">Mendukung dan memotori komunitas fashion and beauty se-Indonesia</p>
+                    </div>
+                    </div>
+                    <!--Card-->
+                </div>
+                <!--Content End-->
+            </div>
+        </div>
+    <!--bagian Content end-->
+    <!--Bagian Layanan-->
+    <div class="w-full bg-white py-24" id="layanan">
+        <div class="container mx-auto">
+            <div class="max-w-xl mb-10 text-center mx-auto aos-init" data-aos="fade-up"
+            data-aos-duration="3000">
+                <h1 class="font-bold text-slate-800 text-4xl mb-6">Inovasi Layanan Bersama <span class="text-indigo-400">Pake</span><span class="text-lime-300">.In</span></h1>
+                <p class="text-slate-500 capitalize">Teknologi Sustainable Untuk Efektifitas Dan Efesiensi bisnis digital dibidang fashion</p>
+            </div>
+            <!-- Fitur Tambahan -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 aos-init" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div class="bg-indigo-400 shadow-lg rounded-lg p-6 border border-gray-200 flex flex-col items-center">
+                    <img src="../public/img/ar.png" alt="Augmented Reality" class="mb-4 w-24 h-24 object-cover rounded-full">
+                    <h2 class="text-xl font-semibold text-lime-300 mb-2">Augmented Reality</h2>
+                    <p class="text-white text-center">Meningkatkan pengalaman pengguna dengan fitur AR untuk mencoba pakaian secara virtual sebelum membeli.</p>
+                </div>
+                <div class="bg-indigo-400 shadow-lg rounded-lg p-6 border border-gray-200 flex flex-col items-center">
+                    <img src="../public/img/request.png" alt="Flexible Request" class="mb-4 w-24 h-24 object-cover rounded-full">
+                    <h2 class="text-xl font-semibold text-lime-300 mb-2">Flexible Request</h2>
+                    <p class="text-white text-center">Kemudahan dalam meminta perubahan dan penyesuaian produk sesuai keinginan pelanggan.</p>
+                </div>
+                <div class="bg-indigo-400 shadow-lg rounded-lg p-6 border border-gray-200 flex flex-col items-center">
+                    <img src="../public/img/fair-play.png" alt="Fair Play Algorithm" class="mb-4 w-24 h-24 object-cover rounded-full">
+                    <h2 class="text-xl font-semibold text-lime-300 mb-2">Fair Play Algorithm</h2>
+                    <p class="text-white text-center">Algoritma yang adil untuk memastikan semua produk mendapatkan kesempatan yang sama untuk terlihat oleh pengguna.</p>
+                </div>
+                <div class="bg-indigo-400  shadow-lg rounded-lg p-6 border border-gray-200 flex flex-col items-center">
+                    <img src="../public/img/chatbot.png" alt="AI Business Assistant" class="mb-4 w-24 h-24 object-cover rounded-full">
+                    <h2 class="text-xl font-semibold text-lime-300 mb-2">AI Business Assistant</h2>
+                    <p class="text-white text-center">Asisten bisnis bertenaga AI untuk membantu pengelolaan dan pengembangan bisnis secara efisien.</p>
+                </div>
+                <div class="bg-indigo-400 shadow-lg rounded-lg p-6 border border-gray-200 flex flex-col items-center">
+                    <img src="../public/img/course.png" alt="Entrepreneur's Course" class="mb-4 w-24 h-24 object-cover rounded-full">
+                    <h2 class="text-xl font-semibold text-lime-300 mb-2">Entrepreneur's Course</h2>
+                    <p class="text-white text-center">Kursus khusus untuk para UMKM dan penjahit yang ingin mengembangkan bisnis fashion mereka dengan pengetahuan terbaru.</p>
+                </div>
+                <div class="bg-indigo-400 shadow-lg rounded-lg p-6 border border-gray-200 flex flex-col items-center">
+                    <img src="../public/img/Fizakoin.png" alt="Entrepreneur's Course" class="mb-4 w-24 h-24 object-cover rounded-full">
+                    <h2 class="text-xl font-semibold text-lime-300 mb-2">FIZA Token (Coming soon)</h2>
+                    <p class="text-white text-center">Sistem token yang memungkinkan transaksi yang aman dan cepat di dalam ekosistem fashion digital.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Bagian Layanan End-->
+    <!-- Bagian Profile -->
+<div class="w-full bg-white py-24" id="profile">
+    <div class="container mx-auto px-6 md:px-12 lg:px-8">
+        <div class="mb-12 text-center aos-init" data-aos="fade-up"
+        data-aos-duration="3000">
+            <h1 class="font-bold text-slate-800 text-4xl mb-6">Lebih Dekat Dengan <span class="text-indigo-400">Pake</span><span class="text-lime-300">.In</span></h1>
+            <p class="text-slate-500 capitalize">Semua dirancang untuk sebuah dedikasi sebagai pemuda Indonesia</p>
+        </div>
+        <div class="py-20 grid gap-28 md:gap-12 md:grid-cols-4 aos-init" <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+            <div class="border-t-4 space-y-8 group text-center">
+                <div class="w-40 h-40 -mt-16 mx-auto rounded-[2rem] rotate-180 overflow-hidden">
+                    <img src="../public/img/isa.png" alt="Isa Al Ghifary Ahmad" loading="lazy" width="500" height="500" class="w-full h-full object-cover -rotate-180 scale-100 mx-auto transition duration-100">
+                </div>
+                <div class="text-center">
+                    <h5 class="text-xl text-slate-800 font-semibold">Isa Al Ghifary Ahmad</h5>
+                    <span class="text-slate-500 text-sm">CEO Founder</span> 
+                    <div class="flex space-x-3 w-max mx-auto items-center mt-2"> 
+                        <a href="https://www.instagram.com/isaalghifaary">
+                            <svg class="w-5 h-5 fill-slate-500 hover:fill-indigo-400 hover:-translate-y-2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/isa-al-ghifary-ahmad-937a6626b">
+                            <svg class="w-5 h-5 fill-slate-500 hover:fill-indigo-400 hover:-translate-y-2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.225.792 24 1.771 24h20.451C23.208 24 24 23.225 24 22.271V1.729C24 .774 23.208 0 22.225 0z"/></svg>
+                        </a>
+                        <a href="mailto:ghifarryaal@gmail.com">
+                          <svg class="w-5 h-5 fill-slate-500 hover:fill-indigo-400 hover:-translate-y-2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t-4 space-y-8 group text-center">
+                <div class="w-40 h-40 -mt-16 mx-auto rounded-[2rem] rotate-180 overflow-hidden">
+                    <img src="../public/img/zulfan.png" alt="Zulfan Lidnan" loading="lazy" width="500" height="500" class="w-full h-full object-cover -rotate-180 scale-100 mx-auto transition duration-100">
+                </div>
+                <div class="text-center">
+                    <h5 class="text-xl text-slate-800 font-semibold">Zulfan Lidnan</h5>
+                    <span class="text-slate-500 text-sm">COO Founder</span> 
+                    <div class="flex space-x-3 w-max mx-auto items-center mt-2">
+                        <a href="https://www.instagram.com/zulfanld_">
+                            <svg class="w-5 h-5 fill-slate-500 hover:fill-indigo-400 hover:-translate-y-2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                        </a>
+                        <a href="https://id.linkedin.com/in/zulfan-lidnan-493360194?utm_source=share&utm_medium=member_mweb&utm_campaign=share_via&utm_content=profile">
+                            <svg class="w-5 h-5 fill-slate-500 hover:fill-indigo-400 hover:-translate-y-2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.225.792 24 1.771 24h20.451C23.208 24 24 23.225 24 22.271V1.729C24 .774 23.208 0 22.225 0z"/></svg>
+                        </a>
+                        <a href="mailto:zulfanlidnan26@gmail.com">
+                          <svg class="w-5 h-5 fill-slate-500 hover:fill-indigo-400 hover:-translate-y-2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t-4 space-y-8 group text-center">
+                <div class="w-40 h-40 -mt-16 mx-auto rounded-[2rem] rotate-180 overflow-hidden">
+                    <img src="../public/img/al.png" alt="Ikram Faizin" loading="lazy" width="500" height="500" class="w-full h-full object-cover -rotate-180 scale-100 mx-auto transition duration-100">
+                </div>
+                <div class="text-center">
+                    <h5 class="text-xl text-slate-800 font-semibold">Farhan Abyan Putra Karim</h5>
+                    <span class="text-slate-500 text-sm">CTO Founder</span> 
+                    <div class="flex space-x-3 w-max mx-auto items-center mt-2">
+                        <a href="https://www.instagram.com/frhnalidrs_/">
+                            <svg class="w-5 h-5 fill-slate-500 hover:fill-indigo-400 hover:-translate-y-2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/farhanabyanpk/">
+                            <svg class="w-5 h-5 fill-slate-500 hover:fill-indigo-400 hover:-translate-y-2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.225.792 24 1.771 24h20.451C23.208 24 24 23.225 24 22.271V1.729C24 .774 23.208 0 22.225 0z"/></svg>
+                        </a>
+                        <a href="mailto:farhanabyanalaydrus@gmail.com">
+                          <svg class="w-5 h-5 fill-slate-500 hover:fill-indigo-400 hover:-translate-y-2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t-4 space-y-8 group text-center">
+                <div class="w-40 h-40 -mt-16 mx-auto rounded-[2rem] rotate-180 overflow-hidden">
+                    <img src="../public/img/ariel.png" alt="Aditya Widyananda" loading="lazy" width="500" height="500" class="w-full h-full object-cover -rotate-180 scale-100 mx-auto transition duration-100">
+                </div>
+                <div class="text-center">
+                    <h5 class="text-xl text-slate-800 font-semibold">Ariel Syahwal</h5>
+                    <span class="text-slate-500 text-sm">CFO Founder</span> 
+                    <div class="flex space-x-3 w-max mx-auto items-center mt-2">
+                        <a href="https://www.instagram.com/arielsyahwal_">
+                            <svg class="w-5 h-5 fill-slate-500 hover:fill-indigo-400 hover:-translate-y-2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/arielsyahwal">
+                            <svg class="w-5 h-5 fill-slate-500 hover:fill-indigo-400 hover:-translate-y-2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.225.792 24 1.771 24h20.451C23.208 24 24 23.225 24 22.271V1.729C24 .774 23.208 0 22.225 0z"/></svg>
+                        </a>
+                        <a href="mailto:arielss9898@gmail.com">
+                          <svg class="w-5 h-5 fill-slate-500 hover:fill-indigo-400 hover:-translate-y-2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end team -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
+  </body>
+    <footer class="bg-gray-900 mt-32 py-10 px-10 font-sans tracking-wide" id="kontak">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-screen-xl mx-auto">
+          <div>
+            <a href='javascript:void(0)'><img src="../public/img/nav-logo (1).png" alt="logo" class='w-44' /></a>
+            <p class="text-sm mt-6 text-white">Menjadi platform fashion e-commerce terdepan yang sustainable, berteknologi canggih dengan fleksibilitas tinggi, serta mendukung perekonomian bangsa melalui pemberdayaan UMKM dan brand-brand lokal.</p>
+  
+            <ul class="mt-10 space-y-6">
+              <li class="flex items-center">
+                <div class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#7076fc' viewBox="0 0 482.6 482.6">
+                    <path
+                      d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z"
+                      data-original="#000000" />
+                  </svg>
+                </div>
+                <a href="https://wa.me/6281384476642" class="text-indigo-400 text-sm ml-3">
+                  <small class="block">Telepon</small>
+                  <strong>62-813-8447-6642</strong>
+                </a>
+              </li>
+              <li class="flex items-center">
+                <div class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#7076fc'viewBox="0 0 479.058 479.058">
+                    <path
+                      d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
+                      data-original="#000000" />
+                  </svg>
+                </div>
+                <a href="mailto:pakein2024@gmail.com" class="text-indigo-400 text-sm ml-3">
+                  <small class="block">Mail</small>
+                  <strong>pakein2024@gmail.com</strong>
+                </a>
+              </li>
+              <li class="flex items-center">
+                <div class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#7076fc'
+                    viewBox="0 0 368.16 368.16">
+                    <path
+                      d="M184.08 0c-74.992 0-136 61.008-136 136 0 24.688 11.072 51.24 11.536 52.36 3.576 8.488 10.632 21.672 15.72 29.4l93.248 141.288c3.816 5.792 9.464 9.112 15.496 9.112s11.68-3.32 15.496-9.104l93.256-141.296c5.096-7.728 12.144-20.912 15.72-29.4.464-1.112 11.528-27.664 11.528-52.36 0-74.992-61.008-136-136-136zM293.8 182.152c-3.192 7.608-9.76 19.872-14.328 26.8l-93.256 141.296c-1.84 2.792-2.424 2.792-4.264 0L88.696 208.952c-4.568-6.928-11.136-19.2-14.328-26.808-.136-.328-10.288-24.768-10.288-46.144 0-66.168 53.832-120 120-120s120 53.832 120 120c0 21.408-10.176 45.912-10.28 46.152z"
+                      data-original="#000000" />
+                    <path
+                      d="M184.08 64.008c-39.704 0-72 32.304-72 72s32.296 72 72 72 72-32.304 72-72-32.296-72-72-72zm0 128c-30.872 0-56-25.12-56-56s25.128-56 56-56 56 25.12 56 56-25.128 56-56 56z"
+                      data-original="#000000" />
+                  </svg>
+                </div>
+                <a href="https://maps.app.goo.gl/RGnX6J9VQSXjcV9E8" class="text-indigo-400 text-sm ml-3">
+                  <small class="block">Alamat</small>
+                  <strong>Jl. HS.Ronggo Waluyo, Puseurjaya, Telukjambe Timur, Karawang, Jawa Barat 41361</strong>
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="max-w-md md:ml-auto">
+            <h4 class="text-lime-400 font-bold text-lg">Contact Us</h4>
+            <p class="text-sm text-white mt-2">We usually respond before 24 hours.</p>
+            <form class="mt-6" action="https://formspree.io/f/mkndddgv"
+            method="POST">
+              <input type="text" placeholder='Name' name="name"
+                class="w-full rounded-md h-10 px-6 bg-[#f0f1f2] text-sm mb-3 outline-indigo-400" />
+              <input type="email" placeholder='Email' name="email"
+                class="w-full rounded-md h-10 px-6 bg-[#f0f1f2] text-sm mb-3 outline-indigo-400" />
+              <textarea placeholder="message" rows="6" name="message"
+                class="w-full rounded-md px-6 bg-[#f0f1f2] text-sm pt-3 outline-indigo-400"></textarea>
+            <button type="submit"
+              class="text-white bg-indigo-500 hover:bg-indigo-600 font-semibold rounded-md text-sm px-6 py-3 block w-full mt-3">Submit</button>
+            </form>
+          </div>
+  
+          <div>
+            <h4 class="text-lime-400 font-bold text-lg">Social Media</h4>
+            <p class="text-sm text-white mt-2">Follow us for the latest updates and exclusive offers!</p>
+            <ul class="flex items-center mt-6 space-x-4">
+              <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                <a href="https://www.instagram.com/pake.in2024?igsh=MWlva3lkbDN4MHNj">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#7076fc' viewBox="0 0 24 24">
+                    <path
+                      d="M12 9.3a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm0-1.8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm5.85-.225a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0ZM12 4.8c-2.227 0-2.59.006-3.626.052-.706.034-1.18.128-1.618.299a2.59 2.59 0 0 0-.972.633 2.601 2.601 0 0 0-.634.972c-.17.44-.265.913-.298 1.618C4.805 9.367 4.8 9.714 4.8 12c0 2.227.006 2.59.052 3.626.034.705.128 1.18.298 1.617.153.392.333.674.632.972.303.303.585.484.972.633.445.172.918.267 1.62.3.993.047 1.34.052 3.626.052 2.227 0 2.59-.006 3.626-.052.704-.034 1.178-.128 1.617-.298.39-.152.674-.333.972-.632.304-.303.485-.585.634-.972.171-.444.266-.918.299-1.62.047-.993.052-1.34.052-3.626 0-2.227-.006-2.59-.052-3.626-.034-.704-.128-1.18-.299-1.618a2.619 2.619 0 0 0-.633-.972 2.595 2.595 0 0 0-.972-.634c-.44-.17-.914-.265-1.618-.298-.993-.047-1.34-.052-3.626-.052ZM12 3c2.445 0 2.75.009 3.71.054.958.045 1.61.195 2.185.419A4.388 4.388 0 0 1 19.49 4.51c.457.45.812.994 1.038 1.595.222.573.373 1.227.418 2.185.042.96.054 1.265.054 3.71 0 2.445-.009 2.75-.054 3.71-.045.958-.196 1.61-.419 2.185a4.395 4.395 0 0 1-1.037 1.595 4.44 4.44 0 0 1-1.595 1.038c-.573.222-1.227.373-2.185.418-.96.042-1.265.054-3.71.054-2.445 0-2.75-.009-3.71-.054-.958-.045-1.61-.196-2.185-.419A4.402 4.402 0 0 1 4.51 19.49a4.414 4.414 0 0 1-1.037-1.595c-.224-.573-.374-1.227-.419-2.185C3.012 14.75 3 14.445 3 12c0-2.445.009-2.75.054-3.71s.195-1.61.419-2.185A4.392 4.392 0 0 1 4.51 4.51c.45-.458.994-.812 1.595-1.037.574-.224 1.226-.374 2.185-.419C9.25 3.012 9.555 3 12 3Z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="max-w-screen-xl mx-auto">
+          <hr class="my-8 border-blue-300" />
+  
+          <div class="lg:flex lg:item-center">
+            <ul class="flex flex-wrap gap-4">
+              <li>
+                <a href='javascript:void(0)' class='text-indigo-400 text-sm font-semibold hover:underline'>Terms of Service</a>
+              </li>
+              <li>
+                <a href='javascript:void(0)' class='text-indigo-400 text-sm font-semibold hover:underline'>Privacy Policy</a>
+              </li>
+              <li>
+                <a href='javascript:void(0)' class='text-indigo-400 text-sm font-semibold hover:underline'>Security</a>
+              </li>
+            </ul>
+            <p class='text-sm text-gray-500 ml-auto max-lg:mt-4'>Copyright © 2024<a href=''
+              target='_blank' class="hover:underline mx-1">FIZA GROUP</a>All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+</html>
